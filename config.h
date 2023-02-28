@@ -62,6 +62,9 @@ static const char *browsercmd[] = { "librewolf", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "nautilus", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
+static const char *codeeditorcmd[] = { "vscodium", NULL };
+
+/* functions */
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
@@ -79,6 +82,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_n,	spawn,	{.v = networkmanagercmd } },
 	{ MODKEY,	XK_f,	spawn,	{.v = filemanagercmd } },
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
+	{ MODKEY, 	XK_c,	spawn,	{.v = codeeditorcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
