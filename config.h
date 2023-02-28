@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "discord", "passwords" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "music", "chat-app", "passwords" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -28,6 +28,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "KeePassXC",	NULL,	NULL,	  1 << 8,	0,	-1 },
+	{ "Spotify",	NULL,	NULL,	1 << 6,	0,	-1},
 };
 
 /* layout(s) */
