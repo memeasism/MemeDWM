@@ -82,6 +82,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_f,	spawn,	{.v = filemanagercmd } },
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
 	{ MODKEY, 	XK_c,	spawn,	{.v = codeeditorcmd } },
+	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
