@@ -63,6 +63,19 @@ static const char *filemanagercmd[] = { "nautilus", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "vscodium", NULL };
 
+
+/* get media keys from X11 */
+
+#include <X11/XF86keysym.h>
+
+/* set volume control commands */
+/* format:                       "path/to/command", subcommand/flag/info. thats it, you can add as many fields as needed.*/
+
+static const char *upvol[]   = { "/usr/bin/pamixer", "-i", "10" };
+static const char *downvol[] = { "/usr/bin/pamixer", "-d", "10" };
+static const char *mutevol[] = { "/usr/bin/pamixer", "-t" };
+
+
 /* functions */
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -93,6 +106,10 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	/* media keys */
+	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
+	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
+	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 };
 
 /* button definitions */
