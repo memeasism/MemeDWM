@@ -13,6 +13,22 @@
 <td>Open Run Menu</td>
 </tr>
 <tr>
+<td>Mod + J</td>
+<td>Change Focused Window</td>
+</tr>
+<tr>
+<td>Mod + K</td>
+<td>Change Focused Window</td>
+</tr>
+<tr>
+<td>Mod + L</td>
+<td>Expand Focused Window To The Right </td>
+</tr>
+<tr>
+<td>Mod + H</td>
+<td>Expand Focused Window To The Left </td>
+</tr>
+<tr>
 <td>Mod + Q</td>
 <td>Quit</td>
 </tr>
