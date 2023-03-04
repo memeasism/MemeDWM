@@ -9,8 +9,32 @@
 <th>Function</th>
 </tr>
 <tr>
-<td>Logo + R</td>
+<td>Mod + R</td>
 <td>Open Run Menu</td>
+</tr>
+<tr>
+<td>Mod + Q</td>
+<td>Quit</td>
+</tr>
+<tr>
+<td>Mod + T</td>
+<td>Open Terminal</td>
+</tr>
+<tr>
+<td>Mod + W</td>
+<td>Open Web Browser</td>
+</tr>
+<tr>
+<td>Mod + F</td>
+<td>Open File Manager</td>
+</tr>
+<tr>
+<td>Mod + V</td>
+<td>Open Virtual Machine Manager</td>
+</tr>
+<tr>
+<td>Mod + C</td>
+<td>Open Code Editor</td>
 </tr>
 </table>
 </html>
