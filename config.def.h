@@ -1,4 +1,5 @@
 /* See LICENSE file for copyright and license details. */
+static const char volincrement[] = "1" ; /*set the amount to increase volume here!*/
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -70,7 +71,6 @@ static const char *codeeditorcmd[] = { "vscodium", NULL };
 
 /* set volume control commands */
 /* format:                       "path/to/command", subcommand/flag/info. thats it, you can add as many fields as needed.*/
-static const char volincrement[] = "1" ;
 static const char *upvol[]   = { "/usr/bin/pamixer", "-i", volincrement };
 static const char *downvol[] = { "/usr/bin/pamixer", "-d", volincrement };
 static const char *mutevol[] = { "/usr/bin/pamixer", "-t" };
