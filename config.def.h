@@ -32,6 +32,7 @@ static const Rule rules[] = {
 	{"discord", 	NULL,	NULL,	1<<7,	0,	-1},
 	{"moosync",	NULL,	NULL,	1<<6,	0,	-1},
 	{"MultiMC",	NULL,	NULL,	1<<5,	0,	-1},
+	{"Virt-manager",	NULL,	NULL,	1<<3,	0,	-1},
 	{"VSCodium",	NULL,	NULL,	1<<2,	0,	-1},
 	/* stuff I would have on their respective and the misc tab so i comment out
 	{"st",	NULL,	NULL,	1<<1,	0,	-1},
