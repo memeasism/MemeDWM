@@ -73,6 +73,7 @@ static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "thunar", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "vscodium", NULL };
+static const char *screenshotcmd[] = { "scrot -s -F ~/Pictures/Screenshots/", NULL };
 
 
 /* get media keys from X11 */
@@ -105,6 +106,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_f,	spawn,	{.v = filemanagercmd } },
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
 	{ MODKEY, 	XK_c,	spawn,	{.v = codeeditorcmd } },
+	{ MODKEY,	XK_s,	spawn,	{.v = screenshotcmd } },
 	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
