@@ -70,7 +70,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "librewolf", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
-static const char *filemanagercmd[] = { "nautilus", NULL };
+static const char *filemanagercmd[] = { "thunar", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "vscodium", NULL };
 
