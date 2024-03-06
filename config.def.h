@@ -77,7 +77,7 @@ static const char *browsercmd[] = { "firefox", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "thunar", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
-static const char *codeeditorcmd[] = { "st nvim", NULL };
+static const char *codeeditorcmd[] = { "st", "nvim", NULL };
 
 
 /* get media keys from X11 */
