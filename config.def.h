@@ -35,10 +35,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{"KeePassXC",	NULL,	NULL,	1 << 8,	0,	-1},
 	{"discord", 	NULL,	NULL,	1<<7,	0,	-1},
-	{"moosync",	NULL,	NULL,	1<<6,	0,	-1},
 	{"MultiMC",	NULL,	NULL,	1<<5,	0,	-1},
 	{"Virt-manager",	NULL,	NULL,	1<<3,	0,	-1},
-	{"VSCodium",	NULL,	NULL,	1<<2,	0,	-1},
 	/* stuff I would have on their respective and the misc tab so i comment out
 	{"st",	NULL,	NULL,	1<<1,	0,	-1},
 	{"LibreWolf",	NULL,	NULL,	1<<0,	0,	-1}
@@ -75,7 +73,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "firefox", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
-static const char *filemanagercmd[] = { "thunar", NULL };
+static const char *filemanagercmd[] = { "st", "vifm", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "st", "nvim", NULL };
 
