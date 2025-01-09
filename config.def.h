@@ -75,7 +75,7 @@ static const char *browsercmd[] = { "firefox", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "dolphin", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
-static const char *codeeditorcmd[] = { "st", "nvim", NULL };
+static const char *codeeditorcmd[] = { "vscodium", NULL };
 static const char *audiomanagercmd[] = { "pavucontrol", NULL };
 
 
