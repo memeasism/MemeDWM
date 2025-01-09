@@ -34,7 +34,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{"KeePassXC",	NULL,	NULL,	1 << 8,	0,	-1},
-	{"Vesktop", 	NULL,	NULL,	1<<7,	0,	-1},
+	{"vesktop", 	NULL,	NULL,	1<<7,	0,	-1},
 	{"MultiMC",	NULL,	NULL,	1<<5,	0,	-1},
 	{"Virt-manager",	NULL,	NULL,	1<<3,	0,	-1},
 	/* stuff I would have on their respective and the misc tab so i comment out
@@ -73,9 +73,10 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "firefox", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
-static const char *filemanagercmd[] = { "st", "vifm", NULL };
+static const char *filemanagercmd[] = { "dolphin", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "st", "nvim", NULL };
+static const char *audiomanagercmd[] = { "pavucontrol", NULL };
 
 
 /* get media keys from X11 */
@@ -108,6 +109,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_f,	spawn,	{.v = filemanagercmd } },
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
 	{ MODKEY, 	XK_c,	spawn,	{.v = codeeditorcmd } },
+	{ MODKEY,	XK_a,	spawn,	{.v = audiomanagercmd } },
 	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
