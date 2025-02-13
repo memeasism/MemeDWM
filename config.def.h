@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 static const char volincrement[] = "1" ; /*set the amount to increase volume here!*/
-
+static const char brincrement[] = "+5%" ;
+static const char brdecrement[] = "-5%" ;
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -89,6 +90,10 @@ static const char *upvol[]   = { "/usr/bin/pamixer", "-i", volincrement };
 static const char *downvol[] = { "/usr/bin/pamixer", "-d", volincrement };
 static const char *mutevol[] = { "/usr/bin/pamixer", "-t" };
 
+/* set brightness control commands */
+static const char *upbr[] = { "/usr/bin/blight", "set", brincrement };
+static const char *downbr[] = { "/usr/bin/blight", "set", brdecrement };
+
 
 /* functions */
 static const Key keys[] = {
@@ -125,6 +130,8 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+	{ 0,			   XF86XK_MonBrightnessUp,  spawn, {.v = upbr } } ,
+	{ 0, 			   XF86XK_MonBrightnessDown,  spawn, {.v = downbr } },
 };
 
 /* button definitions */
