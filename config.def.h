@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{"KeePassXC",	NULL,	NULL,	1 << 8,	0,	-1},
-	{"vesktop", 	NULL,	NULL,	1<<7,	0,	-1},
+	{"Discord", 	NULL,	NULL,	1<<7,	0,	-1},
 	{"MultiMC",	NULL,	NULL,	1<<5,	0,	-1},
 	{"Virt-manager",	NULL,	NULL,	1<<3,	0,	-1},
 	/* stuff I would have on their respective and the misc tab so i comment out
