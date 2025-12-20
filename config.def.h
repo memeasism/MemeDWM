@@ -74,9 +74,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "zen-browser", NULL};
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
-static const char *filemanagercmd[] = { "dolphin", NULL };
+static const char *filemanagercmd[] = { "st", "vifm", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
-static const char *codeeditorcmd[] = { "vscodium", NULL };
+static const char *codeeditorcmd[] = { "st", "nvim", NULL };
 static const char *audiomanagercmd[] = { "pavucontrol", NULL };
 
 
