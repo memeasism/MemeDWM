@@ -72,13 +72,13 @@ static const Layout layouts[] = {
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_red, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *browsercmd[] = { "zen-browser", NULL};
+static const char *browsercmd[] = { "zen-browser", NULL };
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "st", "vifm", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "st", "nvim", NULL };
 static const char *audiomanagercmd[] = { "pavucontrol", NULL };
-
+static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
 /* get media keys from X11 */
 
@@ -115,6 +115,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
 	{ MODKEY, XK_c,	spawn,	{.v = codeeditorcmd } },
 	{ MODKEY,	XK_a,	spawn,	{.v = audiomanagercmd } },
+  { 0, XK_Print, spawn,  {.v = screenshotcmd } },
 	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
