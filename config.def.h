@@ -113,7 +113,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_n,	spawn,	{.v = networkmanagercmd } },
 	{ MODKEY,	XK_f,	spawn,	{.v = filemanagercmd } },
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
-	{ MODKEY, 	XK_c,	spawn,	{.v = codeeditorcmd } },
+	{ MODKEY, XK_c,	spawn,	{.v = codeeditorcmd } },
 	{ MODKEY,	XK_a,	spawn,	{.v = audiomanagercmd } },
 	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
