@@ -77,7 +77,7 @@ static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
 static const char *filemanagercmd[] = { "st", "vifm", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "st", "nvim", NULL };
-static const char *audiomanagercmd[] = { "pavucontrol", NULL };
+static const char *audiomanagercmd[] = { "pwvucontrol", NULL };
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
 /* get media keys from X11 */
