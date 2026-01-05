@@ -79,6 +79,8 @@ static const char *virtmanagercmd[] = { "virt-manager", NULL };
 static const char *codeeditorcmd[] = { "st", "nvim", NULL };
 static const char *audiomanagercmd[] = { "pwvucontrol", NULL };
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
+static const char *videoeditorcmd[] = { "davinci-resolve", NULL};
+
 
 /* get media keys from X11 */
 
@@ -115,6 +117,7 @@ static const Key keys[] = {
 	{ MODKEY,	XK_v,	spawn,	{.v = virtmanagercmd } },
 	{ MODKEY, XK_c,	spawn,	{.v = codeeditorcmd } },
 	{ MODKEY,	XK_a,	spawn,	{.v = audiomanagercmd } },
+  { MODKEY, XK_e, spawn,  {.v = videoeditorcmd } },
   { 0, XK_Print, spawn,  {.v = screenshotcmd } },
 	{ MODKEY|ShiftMask,	XK_space,	togglefloating,	{0} },
 	TAGKEYS(                        XK_1,                      0)
