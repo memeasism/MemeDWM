@@ -24,8 +24,6 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_red,  col_red},
 };
-static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const Bool showsystray       = True;     /* False means no systray */
 /* tagging */
 static const char *tags[] = { "󰈹", "", "󰨞", "", "", "󰍳", "", "󰙯", "󰌆" };
 
