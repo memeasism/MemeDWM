@@ -71,12 +71,12 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_red, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 static const char *browsercmd[] = { "zen-browser", NULL };
 static const char *networkmanagercmd[] = { "nm-connection-editor", NULL };
-static const char *filemanagercmd[] = { "st", "vifm", NULL };
+static const char *filemanagercmd[] = { "kitty", "vifm", NULL };
 static const char *virtmanagercmd[] = { "virt-manager", NULL };
-static const char *codeeditorcmd[] = { "st", "nvim", NULL };
+static const char *codeeditorcmd[] = { "kitty", "nvim", NULL };
 static const char *audiomanagercmd[] = { "pwvucontrol", NULL };
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 static const char *videoeditorcmd[] = { "davinci-resolve", NULL};
